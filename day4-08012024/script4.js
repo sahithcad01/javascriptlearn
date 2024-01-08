@@ -1,17 +1,3 @@
-/* function findadd(a){
-    var c;
-    c= a+10;
-    console.log(c);
-}
-
-findadd(50);
-
-let print=()=>{
-    console.log("Under Process");
-}
-
-console.log(print()); */
-
 /*
 //to use console check the below line
 console.log("Welcome to javascript");
@@ -272,8 +258,107 @@ findGrade1(65,"karthick");
 var findgrade2=(m,k)=>{
     var mark= (35<=m && m<60) ? "grade c" : (60<=m && m<80) ? "Grade B" : (80<=m && m<90) ? "Grade A" : (90<=m && m<=100) ? "Grade Distinction" : "Fail";
 console.log(k,mark); // output
-
+};
+console.log(findgrade2(36,"ram"));
+// using functions
+ 
+function checkgrade(){
+console.log("welcome");
+console.log("just trying");
 
 }
 
-console.log(findgrade2(36,"ram"));
+
+var checkgrade1=(a,b)=>{
+   // console.log(a+b);
+return a+b;
+};
+
+checkgrade();
+// to get output in log using function
+console.log("added Value", checkgrade1(1,2))
+
+//to store output in variable to print in console
+var printmsg =checkgrade1(1,2);
+console.log(printmsg);
+
+// trying to short the code
+var checkgrade2=(a,b)=> a+b;
+
+console.log(checkgrade2(5,10));
+
+
+// trying to short the code
+var checkgrade2=()=> checkgrade();
+
+console.log(checkgrade2());
+
+// conditional statements
+// if condition
+function gradeChecking(m){
+if(35>m && m!=null)
+{
+console.log("no grade");
+console.log("Fail");
+}
+}
+
+gradeChecking(45);
+
+
+
+// if else condition
+function gradeChecking(m){
+    if(35>m && m!=null)
+    {
+    console.log("no grade");
+    console.log("Fail");
+    }
+    else{
+        console.log("Pass");
+        console.log("Other Grades");
+    
+    }
+    }
+
+    
+    gradeChecking(45);
+    
+
+console.clear();
+    
+// nested if else condition
+function gradeChecking(m){
+    if(35>m && m!=null)
+    {
+    console.log("no grade");
+    console.log("Fail");
+    }
+    else{
+        if(35<m && m!=null && m<=60){
+
+            console.log("Pass");
+            console.log("Grade c");
+                }
+
+        else if(60<m && m!=null && m<=80){
+
+            console.log("Pass");
+            console.log("Grade b");
+                }
+
+        else if(80<m && m!=null && m<=100){
+
+            console.log("Pass");
+            console.log("Grade A");
+                }
+                else{
+
+                    gradeChecking(prompt("enter mark"));
+                }
+                
+    }
+    }
+
+    
+gradeChecking(99);
