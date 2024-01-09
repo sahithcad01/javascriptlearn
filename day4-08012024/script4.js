@@ -1,37 +1,44 @@
 
 //08-01-2024........................................................................................
-//sir sample........
 
-function checkgrade(){
+//F1**************
+
+function welcome(){
 console.log("welcome");
 console.log("just trying");
 
 }
 
+welcome();
 
-var checkgrade1=(a,b)=>{
+//F2****************
+
+var addition=(a,b)=>{
    // console.log(a+b);
 return a+b;
 };
 
-checkgrade();
 // to get output in log using function
-console.log("added Value", checkgrade1(1,2))
+console.log("added Value", addition(100,200));
 
 //to store output in variable to print in console
-var printmsg =checkgrade1(1,2);
-console.log(printmsg);
+var printadd = addition(5,10);
+console.log(printadd);
+
+
+//F3*********************
+// trying to short the code
+var check2=(a,b)=> a+b;
+
+console.log(check2(25,75));
+
 
 // trying to short the code
-var checkgrade2=(a,b)=> a+b;
+var check3=()=>welcome(); //call func inside calling func.
+check3(); //calling checkgrade3.
 
-console.log(checkgrade2(5,10));
 
-
-// trying to short the code
-var checkgrade2=()=> checkgrade();
-
-console.log(checkgrade2());
+//F4************************
 
 // conditional statements
 // if condition
@@ -43,7 +50,7 @@ console.log("Fail");
 }
 }
 
-gradeChecking(45);
+gradeChecking(40);
 
 
 
@@ -62,12 +69,13 @@ function gradeChecking(m){
     }
 
     
-    gradeChecking(45);
+    gradeChecking(60);
     
 
-console.clear();
+/* console.clear(); */
     
 // nested if else condition
+//Mark checking..!
 function gradeChecking(m){
     if(35>m && m!=null)
     {
@@ -99,6 +107,4 @@ function gradeChecking(m){
                 
     }
     }
-
-    
-gradeChecking(99);
+gradeChecking(70);
