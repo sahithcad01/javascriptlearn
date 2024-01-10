@@ -1,7 +1,6 @@
 //09-01-2024................................................
 //F1.............
 //SWITCH STMT 
-document.getElementById("script");
 function checkSwitchCase(section){
     switch(section){
         case 'A':
@@ -52,6 +51,7 @@ checkdatatype(false);
 checkdatatype([1,2,3,4,5]);
 checkdatatype({a:'1',b:'2',c:'3'});
 
+//F3...........
 function checkingWithSwitch(a1,b1,a)
 {
 
@@ -79,11 +79,10 @@ function checkingWithSwitch(a1,b1,a)
     }
 
 }
-console.clear();
 checkingWithSwitch(2,5,"add");
 
 
-
+//F4.......................
 
 function checkingWithSwitch(a)
 {
@@ -120,8 +119,8 @@ function checkingWithSwitch(a)
 console.clear();
 checkingWithSwitch(prompt("Enter Operator"));
 
-
-// increment operator
+//operator incre/decre demo......
+//post increment operator
 
 var a=2;
 a++;
@@ -134,6 +133,7 @@ console.log('increment with assignment',a);
 
 console.log(x+a);
 
+//pre increment operator
 var a=2;
 ++a;
 console.log('prefix increment',a);
@@ -145,13 +145,13 @@ console.log('prefix increment with assignment',a);
 
 console.log(x+a);
 
-//decrement 
+//post decrement 
 var a=2;
 a--;
 console.log(a);
 
 
 var a=2;
-var x=--a;
+var x=--a; //pre decrement
 console.log('increment with assignment',x);
 console.log('increment with assignment',a);
