@@ -11,15 +11,13 @@ function registerform(){
     var DOB = document.getElementById("dob").value;
     document.getElementById("tbdob").innerHTML = DOB;
 
-    var Gender =  document.getElementById("male").value;
-    var Gender1 =  document.getElementById("female").value;
-    if(Gender=='Male'){
-        
-        document.getElementById("tbgender").innerHTML = Gender;
+    if(document.getElementById("male").checked){
+       var g=document.getElementById("male").value;
+        document.getElementById("tbgender").innerHTML = g;
     }
-    else
-    {
-        document.getElementById("tbgender").innerHTML = Gender1;
+    if(document.getElementById("female").checked){
+        var g=document.getElementById("female").value;
+         document.getElementById("tbgender").innerHTML = g;
     }
     
     
