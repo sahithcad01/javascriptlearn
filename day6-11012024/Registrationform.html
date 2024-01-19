@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <head>
 	<title>User Regisrtation</title>
-	<link rel="stylesheet" type="text/css" href="register.css">
 </head>
 
 <body>
@@ -9,7 +8,7 @@
 	<p>please Fill the below Form for your Registration!</p>
 	<hr>
 
-<!-- <form> -->
+<form>
 	<br>
 	<label for="UserName">UserName &emsp; </label><br>
 	<input type="text" name="username" id="username" value=""> <br>
@@ -46,13 +45,13 @@
 	</datalist> <br>
 
 	<label for="Phone">Phone</label> <br>
-	<select>
+	<select id="phonecode">
 	<option>--Select--</option> <br>
-	<option>+91</option> <br>
-	<option>+00</option> <br>
-	<option>+11</option> <br>
-	<option>+81</option> <br>
-	</select>
+	<option value="+91 ">+91</option> <br>
+	<option value="+00 ">+00</option> <br>
+	<option value="+11 ">+11</option> <br>
+	<option value="+81 ">+81</option> <br>
+    </select>
 	<input type="tel" name="phone" id="phone"> <br>
 
 	<label for="Email">Email</label><br>
@@ -73,15 +72,15 @@
 
     <div class="button">
 	<input type="button" value="Register" onclick="registerform()">
-	<input type="button" value="Cancel" onclick="cancel()">
+	<input type="reset" value="Cancel" onclick="cancel()">
 	<br>
     </div>
 <br>
 <p>------------------------------------------------------------</p>
-<!-- </form> -->
+</form>
 
 <!-- print input values as table format -->
-<table border="3px">
+<table border="3px" id="tablefm">
 	<caption>Registration Form:</caption>
 	<tr><td colspan="2px">Regisrtation Form Datas</td></tr>
 	<tr>
@@ -114,7 +113,7 @@
 	</tr>
 	<tr>
 		<td><label for="Phone">Phone</label> </td>
-		<td id="tbphone"></td>
+		<td id="tbphone" ></td>
 	</tr>
 	<tr>
 		<td><label for="Email">Email</label></td>
@@ -126,6 +125,7 @@
 	</tr>
 
 </table>
+<input type="button" value="reset_table" onclick="reset()">
 
 <script src="registrationform.js"></script>
 </body>

@@ -11,7 +11,7 @@ function registerform(){
     var DOB = document.getElementById("dob").value;
     document.getElementById("tbdob").innerHTML = DOB;
 
-    if(document.getElementById("male").checked){
+    if(document.getElementById("male").checked){ //radio -gender
        var g=document.getElementById("male").value;
         document.getElementById("tbgender").innerHTML = g;
     }
@@ -20,8 +20,7 @@ function registerform(){
          document.getElementById("tbgender").innerHTML = g;
     }
     
-    
-    
+
 
     var Qualification = document.getElementById("qualification").value;
     document.getElementById("tbqualification").innerHTML = Qualification;
@@ -29,8 +28,9 @@ function registerform(){
     var Location = document.getElementById("location").value;
     document.getElementById("tblocation").innerHTML = Location;
 
-    var Phone = document.getElementById("phone").value;
-    document.getElementById("tbphone").innerHTML = Phone;
+    var Phonecode = (document.getElementById("phonecode").value);
+    var Phone = (document.getElementById("phone").value);
+    document.getElementById("tbphone").innerHTML = Phonecode+Phone;
 
     var Email = document.getElementById("email").value;
     document.getElementById("tbemail").innerHTML = Email;
@@ -41,4 +41,8 @@ function registerform(){
 
 function cancel(){
     alert("Registration Canceled!");
+}
+
+function reset(){
+    window.location.reload();
 }
