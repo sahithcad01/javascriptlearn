@@ -19,8 +19,6 @@ function registerform(){
         var g=document.getElementById("female").value;
          document.getElementById("tbgender").innerHTML = g;
     }
-    
-
 
     var Qualification = document.getElementById("qualification").value;
     document.getElementById("tbqualification").innerHTML = Qualification;
