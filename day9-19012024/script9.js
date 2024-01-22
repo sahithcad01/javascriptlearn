@@ -94,5 +94,6 @@ GetResultFun();
         console.log(age);
         
         }
+       
         
 stringanddate();
