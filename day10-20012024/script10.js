@@ -29,10 +29,10 @@ function strtext(){
     var output=text.charAt(0);
     console.log(output);
     
-    var output=text.charCodeAt(0);
+    var output=text.charCodeAt(30); //T - 116
     console.log(output);
     
-    var output=text.startsWith("w");
+    var output=text.startsWith("W");
     console.log(output);
     
     var output=text.endsWith("n");
@@ -48,17 +48,18 @@ function strtext(){
     number=number.padStart(5,"B");
     console.log(number);
     
-    var number="5";
-    number=number.padEnd(5,"B");
+    var number="Sanjay";
+    number=number.padEnd(10,"B");
     console.log(number);
     
     
     //split
     
     console.table(text.split(" "));
-    
     console.log(text.length);
+
     var text1=text.trim();
+    console.log(text1);
     console.log(text1.length);
     
     }
@@ -90,7 +91,7 @@ function strnames(){
     console.log("arrow output");
 
     
-    var result=namelist.forEach(name1=>console.log(name1));
+    var result=namelist.forEach(name1=>console.table(name1));
     
     var namelist=["karthick", "kavin", "kayal", "ragu", "mani", "harsh", "anand", "basheerk"]; 
     var define1="m";
